@@ -12,75 +12,118 @@ type Service = {
 const services: Service[] = [
   {
     icon: 'ri-tooth-line',
-    title: 'Opštaa / preventivna stomatologija',
-    description: 'Redovni pregledi, dijagnostika i preventivna njega za dugoročno očuvanje zdravlja zuba i desni.',
+    title: 'Polivalentna stomatologija',
+    description:
+      'Pregledi, dijagnostika (uključujući RVG i OPG), hitna pomoć, ekstrakcije i osnovne stomatološke intervencije.',
     color: 'from-teal-400 to-cyan-500',
     details:
-      'Preventivna stomatologija usmjerena je na rano otkrivanje problema i očuvanje zdravlja usne šupljine kroz redovne kontrole i individualne preporuke.',
-    procedures: ['Kontrolni pregledi', 'Preventivna dijagnostika', 'Uklanjanje kamenca', 'Savjeti za oralnu higijenu'],
+      'Obuhvata redovne preglede, snimanje, prvu pomoć u hitnim stanjima, vađenje zuba (uključujući otežane i rizične slučajeve) te privremene ispune i izdavanje mišljenja.',
+    procedures: [
+      'Stomatološki i ponovni pregled',
+      'Retroalveolarni snimak (RVG) i panoramski OPG',
+      'Prva pomoć (anestezija, trepanacija, aplikacija lijeka)',
+      'Ekstrakcije i aplikacija anestetika',
+      'Privremeni ispuni i pismeno mišljenje stomatologa',
+    ],
   },
   {
     icon: 'ri-first-aid-kit-line',
     title: 'Restaurativna stomatologija',
-    description: 'Sanacija karijesa, ispuni i restaurativni zahvati za očuvanje prirodne strukture zuba.',
+    description: 'Sanacija karijesa kompozitnim ispunima, nadogradnje i estetski tretmani uključujući izbjeljivanje.',
     color: 'from-blue-400 to-indigo-500',
     details:
-      'Restaurativna stomatologija obuhvata tretmane kojima se uklanja karijes i funkcionalno obnavlja zub uz maksimalno očuvanje prirodnog tkiva.',
-    procedures: ['Bijeli ispuni', 'Sanacija karijesa', 'Rekonstrukcija oštećenih zuba', 'Zbrinjavanje osjetljivosti zuba'],
+      'Fokus je na očuvanje prirodnog zuba kroz kompozitne ispune jedno- i višepovršinske, nadogradnje uz parapulpalni kolčić, zaštitu pulpe te ordinacijsko i kućno izbjeljivanje.',
+    procedures: [
+      'Kompozitni ispuni (jedno-, dvo- i višepovršinski)',
+      'Kompozitna nadogradnja (parapulpalni kolčić)',
+      'Prekrivanje pulpe',
+      'Izbjeljivanje sa udlagama i ordinacijsko izbjeljivanje',
+    ],
+  },
+  {
+    icon: 'ri-bear-smile-line',
+    title: 'Pedodoncija',
+    description: 'Nježna njega zuba i desni kod djece: prevencija, sanacija mliječnih zuba i savjeti roditeljima.',
+    color: 'from-pink-400 to-rose-500',
+    details:
+      'Prilagođeni pristup najmlađim pacijentima uz fluoridaciju, čišćenje naslaga, glassionomer ispune, devitalizaciju mliječnih zuba i ekstrakcije kada je potrebno.',
+    procedures: [
+      'Ekstrakcija mliječnog zuba',
+      'Fluoridacija gornje i donje vilice',
+      'Skidanje naslaga i profesionalno čišćenje pastom',
+      'Glassionomer ispuni i devitalizacija mliječnih zuba',
+    ],
   },
   {
     icon: 'ri-microscope-line',
     title: 'Endodoncija',
-    description: 'Precizno liječenje korijenskih kanala uz savremene tehnike i maksimalno očuvanje zuba.',
+    description: 'Liječenje i punjenje korijenskih kanala radi očuvanja zuba koji bi inače morao biti uklonjen.',
     color: 'from-purple-400 to-pink-500',
     details:
-      'Endodontska terapija primjenjuje se kada je potrebno sačuvati zub zahvaćen upalom ili infekcijom korijenskog kanala.',
-    procedures: ['Liječenje kanala korijena', 'Revizija prethodne endodontske terapije', 'Uklanjanje infekcije', 'Očuvanje prirodnog zuba'],
-  },
-  {
-    icon: 'ri-align-center',
-    title: 'Ortodoncija',
-    description: 'Ispravljanje položaja zuba i vilica radi funkcionalnog zagriza i pravilnog osmijeha.',
-    color: 'from-green-400 to-teal-500',
-    details:
-      'Ortodontski tretmani pomažu u ispravljanju nepravilnog položaja zuba i vilica, uz poseban fokus na funkciju, estetiku i dugoročnu stabilnost.',
-    procedures: ['Pregled', 'Plan terapije', 'Ortodonske folije', 'Retineri'],
+      'Endodontska terapija uključuje ekstirpaciju pulpe, obradu i definitivno punjenje kanala te revizije ranijeg liječenja, uz pripremu za nadogradnju metalnim ili fiberglas kolčićem.',
+    procedures: [
+      'Ekstirpacija pulpe (po kanalu)',
+      'Obrada kanala (jedno-, dvo-, tro- i višekanalni zubi)',
+      'Definitivno punjenje kanala',
+      'Revizija endodontskog liječenja',
+    ],
   },
   {
     icon: 'ri-heart-pulse-line',
-    title: 'Parodontologija',
-    description: 'Dijagnostika i terapija bolesti desni i potpornih struktura zuba.',
+    title: 'Bolesti usta i parodontologija',
+    description: 'Terapija desni i potpornog tkiva: uklanjanje kamenca, dubinsko čišćenje i održavanje zdravlja parodonta.',
     color: 'from-orange-400 to-red-500',
     details:
-      'Parodontologija je usmjerena na zdravlje desni i koštane potpore zuba, kao i na terapiju upalnih i hroničnih stanja parodonta.',
-    procedures: ['Pregled i procjena stanja desni', 'Terapija upale desni', 'Dubinsko čišćenje', 'Praćenje parodontološkog statusa'],
-  },
-  {
-    icon: 'ri-capsule-line',
-    title: 'Oralna hirurgija i Implantologija',
-    description: 'Hirurški zahvati, vađenja i implantološka rješenja za sigurnu i trajnu rehabilitaciju.',
-    color: 'from-cyan-400 to-blue-500',
-    details:
-      'Ova grana obuhvata hirurške intervencije i implantološka rješenja kojima se vraća funkcija, stabilnost i estetika osmijeha.',
-    procedures: ['Vađenje zuba', 'Hirurški zahvati u usnoj šupljini', 'Ugradnja implantata', 'Planiranje implantološke terapije'],
+      'Dijagnostika i terapija inflamacija desni kroz ultrazvučno uklanjanje kamenca, poliranje, subgingivalnu kiretažu po kvadrantima te kombinovani tretman sa air flow-om.',
+    procedures: [
+      'Ultrazvučno skidanje kamenca sa poliranjem',
+      'Subgingivalna kiretaža (kvadrant)',
+      'Ultrazvučno skidanje kamenca + air flow',
+    ],
   },
   {
     icon: 'ri-building-line',
     title: 'Protetika',
-    description: 'Krunice, mostovi i protetski radovi za obnovu funkcije, estetike i stabilnosti zagriza.',
+    description:
+      'Fiksni i mobilni protetski radovi: proteze, krunice, mostovi, splintovi i estetske nadoknade prema individualnom planu.',
     color: 'from-emerald-400 to-teal-500',
     details:
-      'Protetika vraća punu funkciju i estetiku osmijeha kroz individualno planirane nadoknade koje odgovaraju vašem zagrizu i potrebama.',
-    procedures: ['Krunice i mostovi', 'Fiksni protetski radovi', 'Mobilne proteze', 'Rehabilitacija zagriza'],
+      'Od akrilatnih parcijalnih i totalnih proteza, skeletiranih Wironit rješenja i kruna (metalokeramika, titan, cirkon) do privremenih kruna, veenera i protetskih radova na implantatima.',
+    procedures: [
+      'Parcijalne i totalne proteze (uključujući Physiodens i na implantatima)',
+      'Krunice i kombinovane Wironit konstrukcije',
+      'Michigan i Play safe splintovi',
+      'Veeneri i privremene krunice',
+    ],
   },
   {
-    icon: 'ri-bear-smile-line',
-    title: 'Dječija stomatologija',
-    description: 'Nježna i prijateljska njega za najmlađe pacijente u opuštajućem okruženju.',
-    color: 'from-pink-400 to-rose-500',
+    icon: 'ri-scissors-line',
+    title: 'Oralna hirurgija',
+    description:
+      'Operativne ekstrakcije, resekcije vrha korijena, plastike mekih tkiva i drugi hirurški zahvati u usnoj šupljini.',
+    color: 'from-cyan-400 to-blue-500',
     details:
-      'Dječija stomatologija prilagođena je najmlađim pacijentima kako bi pregledi i tretmani bili sigurni, nježni i bez stresa.',
-    procedures: ['Preventivni pregledi za djecu', 'Sanacija mliječnih zuba', 'Savjeti roditeljima', 'Stvaranje pozitivnog iskustva kod djece'],
+      'Uključuje operativno vađenje korijena i impaktiranih zuba, drenažu apscesa, apikotomije, nivelaciju grebena, vestibuloplastiku, gingivektomiju i hirurške korekcije OAK.',
+    procedures: [
+      'Operativne ekstrakcije (korijen, umnjaci, očnjak)',
+      'Incizija apscesa i apikotomije',
+      'Vestibuloplastika i korekcija mekih tkiva',
+      'Konzervativno zatvaranje i plastika OAK',
+    ],
+  },
+  {
+    icon: 'ri-capsule-line',
+    title: 'Implantologija',
+    description: 'Ugradnja implantata, augmentacija kosti i protetska faza na implantatima uz laboratorijsku podršku.',
+    color: 'from-violet-400 to-purple-600',
+    details:
+      'Planiranje i ugradnja dentalnih implantata, horizontalna i vertikalna augmentacija, metalkeramičke nadoknade na implantatu, otvaranje implantata, transfer u laboratoriju i lokator nadogradnje.',
+    procedures: [
+      'Ugradnja dentalnog implantata',
+      'Augmentacija (horizontalna i vertikalna)',
+      'Metalkeramička navlaka na implantatu',
+      'Oblikovači gingive, transfer stanja i retencioni setovi',
+    ],
   },
 ];
 
@@ -160,7 +203,9 @@ export default function Services() {
                   }}
                 ></div>
 
-                <div className={`w-16 h-16 flex items-center justify-center bg-gradient-to-br ${service.color} rounded-2xl mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg`}>
+                <div
+                  className={`w-16 h-16 flex items-center justify-center bg-gradient-to-br ${service.color} rounded-2xl mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg`}
+                >
                   <i className={`${service.icon} text-3xl text-white`}></i>
                 </div>
 
@@ -168,9 +213,7 @@ export default function Services() {
                   {service.title}
                 </h3>
 
-                <p className="text-gray-600 leading-relaxed mb-4">
-                  {service.description}
-                </p>
+                <p className="text-gray-600 leading-relaxed mb-4">{service.description}</p>
 
                 <button
                   type="button"
@@ -194,9 +237,7 @@ export default function Services() {
           <div className="mt-16 text-center">
             <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-teal-50 to-blue-50 px-6 py-4 rounded-2xl">
               <i className="ri-question-line text-teal-600 text-xl"></i>
-              <span className="text-gray-700">
-                Niste sigurni koja usluga vam je potrebna?
-              </span>
+              <span className="text-gray-700">Niste sigurni koja usluga vam je potrebna?</span>
               <button
                 type="button"
                 onClick={scrollToForm}
@@ -247,9 +288,7 @@ export default function Services() {
             </div>
 
             <div className="max-h-[calc(92vh-110px)] overflow-y-auto px-5 py-6 sm:max-h-[calc(88vh-120px)] sm:px-8 sm:py-8">
-              <p className="text-base leading-8 text-gray-600 sm:text-lg">
-                {selectedService.details}
-              </p>
+              <p className="text-base leading-8 text-gray-600 sm:text-lg">{selectedService.details}</p>
 
               <div className="mt-8">
                 <h4 className="text-lg font-bold text-gray-900 sm:text-xl">Šta obuhvata</h4>
@@ -271,7 +310,8 @@ export default function Services() {
               <div className="mt-8 rounded-3xl bg-gradient-to-r from-teal-50 to-blue-50 px-5 py-5 sm:px-6">
                 <h4 className="text-lg font-bold text-gray-900">Želite konsultaciju za ovu uslugu?</h4>
                 <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-                  Kontaktirajte nas i pomoći ćemo vam da odaberete odgovarajući tretman i termin pregleda.
+                  Kontaktirajte nas i pomoći ćemo vam da odaberete odgovarajući tretman i termin pregleda. Tačne cijene
+                  pogledajte u dijelu Cjenovnik.
                 </p>
                 <div className="mt-5 flex flex-col gap-3 sm:flex-row">
                   <button
@@ -280,6 +320,16 @@ export default function Services() {
                     className="whitespace-nowrap rounded-full bg-teal-500 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-teal-600 hover:shadow-lg sm:text-base"
                   >
                     Zakaži pregled
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSelectedService(null);
+                      document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }}
+                    className="inline-flex items-center justify-center whitespace-nowrap rounded-full border border-teal-200 bg-white px-6 py-3 text-sm font-semibold text-teal-600 transition-all hover:border-teal-300 hover:bg-teal-50 sm:text-base"
+                  >
+                    Otvori cjenovnik
                   </button>
                   <a
                     href="tel:035412873"

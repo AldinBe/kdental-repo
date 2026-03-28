@@ -1,0 +1,230 @@
+{
+  "clinic": {
+    "subtitle": "centar savremene stomatologije",
+    "documentTitle": "Cjenovnik"
+  },
+  "currency": "KM",
+  "currencyDescription": "Konvertibilna marka",
+  "paymentNote": "PLAĆANJE ISKLJUČIVO U KONVERTIBILNIM MARKAMA",
+  "categories": [
+    {
+      "id": "general-dentistry",
+      "order": 1,
+      "name": "Polivalentna stomatologija",
+      "colorHint": "red",
+      "items": [
+        { "row": "001", "codes": ["007"], "name": "Stomatološki pregled", "price": 10 },
+        { "row": "002", "codes": ["008"], "name": "Ponovni stomatološki pregled", "price": 10 },
+        { "row": "003", "codes": ["301"], "name": "Retroalveolarni snimak (RVG)", "price": 10 },
+        {
+          "row": "004",
+          "codes": ["194"],
+          "name": "Prva pomoć (anestezija, trepanacija zuba i aplikacija lijeka)",
+          "price": 30
+        },
+        { "row": "005", "codes": ["411"], "name": "Aplikacija anestetika", "price": 10 },
+        { "row": "006", "codes": ["224"], "name": "Ekstrakcija stalnog zuba", "price": 30 },
+        {
+          "row": "007",
+          "codes": ["225"],
+          "name": "Otežana ekstrakcija zuba ili korjena (sa ili bez sutura, modelacija alveole)",
+          "price": 50
+        },
+        {
+          "row": "008",
+          "codes": ["226"],
+          "name": "Ekstrakcija zuba kod riziko pacijenata (pisana saglasnost)",
+          "price": 50
+        },
+        { "row": "009", "codes": ["150"], "name": "Privremeni ispun (kavit, fosfatni cement)", "price": 10 },
+        { "row": "010", "codes": ["015"], "name": "Izdavanje pismenog mišljenja stomatologa", "price": 30 },
+        { "row": "011", "codes": [], "name": "Panoramski OPG snimak", "price": 40 }
+      ]
+    },
+    {
+      "id": "restorative",
+      "order": 2,
+      "name": "Restaurativna stomatologija",
+      "colorHint": "orange",
+      "items": [
+        { "row": "201", "codes": ["158"], "name": "Kompozitni ispun (jednopovršinski)", "price": 40 },
+        { "row": "202", "codes": ["160"], "name": "Kompozitni ispun (dvo- i više-površinski)", "price": 50 },
+        { "row": "203", "codes": ["161"], "name": "Kompozitna nadogradnja (parapulpalni kolčić)", "price": 80 },
+        { "row": "204", "codes": ["178"], "name": "Direktno ili indirektno prekrivanje pulpe", "price": 10 },
+        { "row": "205", "codes": ["190"], "name": "Izbjeljivanje zuba sa udlagama", "price": 300 },
+        { "row": "206", "codes": [], "name": "Ordinacijsko izbjeljivanje zuba", "price": 300 }
+      ]
+    },
+    {
+      "id": "pedodontics",
+      "order": 3,
+      "name": "Pedodoncija",
+      "colorHint": "dark-red",
+      "items": [
+        { "row": "301", "codes": ["066"], "name": "Ekstrakcija mliječnog zuba", "price": 20 },
+        { "row": "302", "codes": ["040"], "name": "Fluoridacija zuba gornje i donje vilice", "price": 50 },
+        { "row": "303", "codes": ["031"], "name": "Skidanje mekih i tvrdih naslaga", "price": 20 },
+        { "row": "304", "codes": ["150"], "name": "Glassionomer ispun (jedno ili višepovršinski)", "price": 30 },
+        { "row": "305", "codes": ["052"], "name": "Devitalizacija mliječnih zuba", "price": 30 },
+        { "row": "306", "codes": ["032"], "name": "Profesionalno čišćenje zuba profilaktičkom pastom", "price": 20 }
+      ]
+    },
+    {
+      "id": "endodontics",
+      "order": 4,
+      "name": "Endodoncija",
+      "colorHint": "light-green",
+      "items": [
+        { "row": "401", "codes": ["181"], "name": "Ekstirpacija pulpe (po kanalu)", "price": 10 },
+        { "row": "402", "codes": ["185"], "name": "Obrada korjenskog kanala (jedno i dvokanalni zubi)", "price": 30 },
+        { "row": "403", "codes": ["185"], "name": "Obrada korjenskog kanala (tro i višekanalni zubi)", "price": 50 },
+        { "row": "404", "codes": ["186"], "name": "Definitivno punjenje (jedno- i dvo-kanalni zubi)", "price": 30 },
+        { "row": "405", "codes": ["186"], "name": "Definitivno punjenje (tro- i višekanalni zubi)", "price": 50 },
+        { "row": "406", "codes": ["188"], "name": "Revizija endodontskog liječenja (po korjenskom kanalu)", "price": 30 },
+        { "row": "407", "codes": ["338"], "name": "Priprema zuba za nadogradnju (metalni konfekcijski kolčić)", "price": 30 },
+        { "row": "408", "codes": ["338"], "name": "Priprema zuba za nadogradnju (fiberglas kolčić)", "price": 60 }
+      ]
+    },
+    {
+      "id": "periodontics",
+      "order": 5,
+      "name": "Bolesti usta i parodontologija",
+      "colorHint": "dark-green",
+      "items": [
+        { "row": "501", "codes": ["221"], "name": "Ultrazvučno skidanje kamenca sa poliranjem", "price": 40 },
+        { "row": "502", "codes": ["220"], "name": "Subgingivalna kiretaža (kvadrant)", "price": 100 },
+        { "row": "503", "codes": [], "name": "Ultrazvučno skidanje kamenca + air flow", "price": 60 }
+      ]
+    },
+    {
+      "id": "prosthetics",
+      "order": 6,
+      "name": "Protetika",
+      "colorHint": "blue",
+      "items": [
+        { "row": "601", "codes": ["315"], "name": "Akrilatna parcijalna proteza (1–2 zuba)", "price": 100 },
+        { "row": "602", "codes": ["306"], "name": "Akrilatna parcijalna proteza", "price": 250 },
+        { "row": "603", "codes": ["302"], "name": "Akrilatna totalna proteza", "price": 250 },
+        { "row": "604", "codes": ["303"], "name": "Akrilatna totalna proteza (Physiodens zubi)", "price": 500 },
+        {
+          "row": "605",
+          "codes": ["318"],
+          "name": "Reparatura, dodatak zuba ili kukice sa anatomskim otiskom",
+          "price": 30
+        },
+        { "row": "606", "codes": ["334"], "name": "Podlaganje akrilatne proteze", "price": 60 },
+        {
+          "row": "607",
+          "codes": ["307"],
+          "name": "Skeletirana parcijalna proteza sa livenim kukicama (Wironit proteza)",
+          "price": 600
+        },
+        { "row": "608", "codes": ["316"], "name": "Skidanje stare navlake", "price": 20 },
+        { "row": "609", "codes": ["317"], "name": "Recementiranje stare navlake", "price": 20 },
+        {
+          "row": "610",
+          "codes": ["322"],
+          "name": "Krunica – navlaka (Metalkeramička, nosač, član)",
+          "price": 200
+        },
+        { "row": "611", "codes": ["323"], "name": "Krunica – navlaka (Titan, nosač, član)", "price": 250 },
+        { "row": "612", "codes": ["326"], "name": "Krunica – navlaka (Zirkon, nosač, član)", "price": 320 },
+        {
+          "row": "613",
+          "codes": ["307"],
+          "name": "Kombinacija I (wironit metal proteza, 2× Bredent attachment)",
+          "price": 1200
+        },
+        { "row": "614", "codes": ["336"], "name": "Livena kolčić nadogradnja", "price": 50 },
+        { "row": "615", "codes": ["222"], "name": "Michigan splint (za bruksizam i izbjeljivanje)", "price": 100 },
+        { "row": "616", "codes": ["223"], "name": "Play safe splint (zaštitni sportski splint)", "price": 100 },
+        { "row": "617", "codes": ["321"], "name": "Privremena krunica (po zubu, članu)", "price": 20 },
+        { "row": "618", "codes": ["063"], "name": "Privremena krunica (PMMA, do 6 članova)", "price": 100 },
+        { "row": "619", "codes": ["351"], "name": "Veener (Kompozitna faseta)", "price": 100 },
+        {
+          "row": "620",
+          "codes": ["063"],
+          "name": "Metalno-keramički most na implantate (MUA) na šarafe",
+          "price": 4500
+        },
+        { "row": "621", "codes": ["351"], "name": "Akrilatna totalna proteza na implantate", "price": 1000 }
+      ]
+    },
+    {
+      "id": "oral-surgery",
+      "order": 7,
+      "name": "Oralna hirurgija",
+      "colorHint": "dark-blue",
+      "items": [
+        { "row": "701", "codes": ["232"], "name": "Ekstrakcija zaostalog korjena (operativno)", "price": 200 },
+        { "row": "702", "codes": ["230"], "name": "Ekstrakcija impaktiranih umnjaka (operativno)", "price": 250 },
+        { "row": "703", "codes": ["231"], "name": "Ekstrakcija impaktiranog očnjaka (operativno)", "price": 250 },
+        {
+          "row": "704",
+          "codes": ["235"],
+          "name": "Incizija apcesa i postavljanje drenaže (intraoralno, ekstraoralno)",
+          "price": 80
+        },
+        {
+          "row": "705",
+          "codes": ["260"],
+          "name": "Apikotomija (po zubu, jednokorjeni i dvokorjeni zubi)",
+          "price": 250
+        },
+        {
+          "row": "706",
+          "codes": ["263"],
+          "name": "Apikotomija sa retrogradnim punjenjem (po zubu, jednokorjeni i dvokorjeni zubi, MTA)",
+          "price": 300
+        },
+        { "row": "707", "codes": ["251"], "name": "Parcijalna nivelacija grebena po kvadrantu", "price": 150 },
+        {
+          "row": "708",
+          "codes": ["243"],
+          "name": "Uklanjanje hiperplazije – vestibuloplastika (po kvadrantu)",
+          "price": 100
+        },
+        {
+          "row": "709",
+          "codes": ["237"],
+          "name": "Hirurška korekcija mekih tkiva (Frenulum, papilom, plike, proptoze)",
+          "price": 100
+        },
+        { "row": "710", "codes": ["246"], "name": "Gingivektomija (po kvadrantu)", "price": 50 },
+        { "row": "711", "codes": ["264"], "name": "Konzervativno zatvaranje OAK", "price": 120 },
+        { "row": "712", "codes": ["267"], "name": "Plastika OAK sa vestibularnim režnjem", "price": 300 }
+      ]
+    },
+    {
+      "id": "implantology",
+      "order": 8,
+      "name": "Implantologija",
+      "colorHint": "purple",
+      "items": [
+        { "row": "801", "codes": ["283"], "name": "Ugradnja dentalnog implantata", "price": 1000 },
+        { "row": "802", "codes": ["284"], "name": "Augmentacija (horizontalna)", "price": 300 },
+        { "row": "803", "codes": ["284"], "name": "Augmentacija (vertikalna)", "price": 1000 },
+        {
+          "row": "804",
+          "codes": ["342"],
+          "name": "Metalkeramička navlaka na implantat (Abutment, solo kruna na cementiranje)",
+          "price": 600
+        },
+        {
+          "row": "805",
+          "codes": ["285"],
+          "name": "Otvaranje implantata i postavljanje oblikovača gingive (sulcus former)",
+          "price": 120
+        },
+        {
+          "row": "806",
+          "codes": ["286"],
+          "name": "Transfer stanja u ustima prema laboru za izradu suprakonstrukcije",
+          "price": 180
+        },
+        { "row": "807", "codes": [], "name": "Set kapica za retenciju", "price": 150 },
+        { "row": "808", "codes": [], "name": "Lokator nadogradnja na implantat", "price": 500 }
+      ]
+    }
+  ]
+}

@@ -47,7 +47,9 @@ export default function Gallery() {
                 <img
                   src={image.url}
                   alt={image.title}
-                  className="w-full h-full object-cover object-center transform group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full w-full transform object-cover object-center transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
 

@@ -86,14 +86,14 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-6">Usluge</h3>
             <ul className="space-y-3 text-gray-300">
-              <li>Opšta / preventivna stomatologija</li>
+              <li>Polivalentna stomatologija</li>
               <li>Restaurativna stomatologija</li>
+              <li>Pedodoncija</li>
               <li>Endodoncija</li>
-              <li>Ortodoncija</li>
-              <li>Parodontologija</li>
-              <li>Oralna hirurgija i Implantologija</li>
+              <li>Bolesti usta i parodontologija</li>
               <li>Protetika</li>
-              <li>Dječija stomatologija</li>
+              <li>Oralna hirurgija</li>
+              <li>Implantologija</li>
             </ul>
           </div>
 
